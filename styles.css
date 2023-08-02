@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+
+
 :root {
 	--primary-color: #c7a17a;
 	--background-color: #f9f5f0;
@@ -106,7 +108,7 @@ html {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem 0;
+	padding: 1rem 2rem;
 }
 
 .navbar .fa-bars {
@@ -161,6 +163,7 @@ html {
 	background-color: #fff;
 	height: 4.4rem;
 	overflow: hidden;
+	width: auto;
 }
 
 .search-form input {
@@ -172,6 +175,8 @@ html {
 	padding: 0 2rem;
 	color: #777;
 	cursor: pointer;
+	width: 100%;
+	height: 100%;
 }
 
 .search-form input::-webkit-search-cancel-button {
@@ -750,4 +755,59 @@ html {
 	border-radius: 3px;
 	cursor: pointer;
 	transition: all 300ms ease;
+}
+
+@media (max-width: 1024px) {
+	.logo a {
+		font-size: 2rem !important;
+	}
+
+	.container-logo i, .container-user i , .customer-support i{
+		font-size: 1.8rem !important;
+	}
+
+	.container-hero {
+		padding-left: 10px;
+		padding-right: 25px;
+	}
+
+	ul > li > a {
+		/* font-size: 1rem !important; */
+	}
+
+	.navbar {
+		padding: 15px 20px;
+		flex-direction: column;
+	}
+
+	.menu {
+		margin: 15px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+@media (max-width: 510px){
+
+	.menu > li {
+		margin: ;
+	}
+	
+	.menu {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.hero {
+		flex-direction: column !important;
+		padding: 1rem 0;
+	}
+	.navbar {
+		padding: 15px 20px;
+		flex-direction: column;
+	}
+
+	.search-form {
+		width: 90%;
+	}
 }
